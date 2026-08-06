@@ -57,7 +57,7 @@ repositories:
   # universe
   universe/autoware_universe:
     type: git
-    url: https://github.com/autowarefoundation/autoware_universe.git
+    url: https://github.com/ReginaldOlsson/autoware_universe.git
     version: feature/moveit-ackermann-freespace
   universe/external/tier4_autoware_msgs:
     type: git
@@ -94,7 +94,7 @@ repositories:
     version: ea36766fdc2ac8e8c8e3ac988ae69acd6d09bb30
   universe/external/bevdet_vendor: # TODO: wrap the original bevdet-tensorrt-cpp source code as a vendor package and provide it to autoware_tensorrt_bevdet package
     type: git
-    url: https://github.com/autowarefoundation/bevdet_vendor.git
+    url: https://github.com/ReginaldOlsson/bevdet_vendor.git
     version: fix/local-workspace
   universe/external/trt_batched_nms:
     type: git
@@ -115,7 +115,7 @@ repositories:
   # Local workspace extras (present under src/ but previously unpinned)
   universe/external/autoware_vision_pilot:
     type: git
-    url: https://github.com/autowarefoundation/autoware_vision_pilot.git
+    url: https://github.com/ReginaldOlsson/autoware_vision_pilot.git
     version: fix/local-workspace
   universe/external/boreas_cpp:
     type: git
@@ -153,7 +153,7 @@ repositories:
   # launcher
   launcher/autoware_launch:
     type: git
-    url: https://github.com/autowarefoundation/autoware_launch.git
+    url: https://github.com/ReginaldOlsson/autoware_launch.git
     version: feature/moveit-ackermann-freespace
 
   # sensor_component
@@ -172,7 +172,7 @@ repositories:
   # Fork of transport_drivers that enables reduction of copy operations
   sensor_component/transport_drivers:
     type: git
-    url: https://github.com/autowarefoundation/transport_drivers
+    url: https://github.com/ReginaldOlsson/transport_drivers.git
     version: fix/local-workspace
   # Continental compatible version of ROS 2 socket CAN
   sensor_component/ros2_socketcan:
