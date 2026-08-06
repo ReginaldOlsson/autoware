@@ -20,6 +20,21 @@ Override `tensorrt_version` explicitly via `-e tensorrt_version=…` to pin a di
 
 ## Manual Installation
 
+Prefer the helper script when full ansible is awkward (Ubuntu 24.04 / Jazzy):
+
+```bash
+bash ansible/scripts/install-tensorrt.sh
+```
+
+Then rebuild packages that need TensorRT:
+
+```bash
+colcon build --packages-up-to \
+  autoware_tensorrt_common autoware_tensorrt_classifier \
+  autoware_tensorrt_plugins bevdet_vendor \
+  --cmake-args -DCMAKE_BUILD_TYPE=Release
+```
+
 ### Set up the environment variables
 
 ```bash

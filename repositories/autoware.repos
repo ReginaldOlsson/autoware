@@ -95,7 +95,7 @@ repositories:
   universe/external/bevdet_vendor: # TODO: wrap the original bevdet-tensorrt-cpp source code as a vendor package and provide it to autoware_tensorrt_bevdet package
     type: git
     url: https://github.com/autowarefoundation/bevdet_vendor.git
-    version: 0.1.0
+    version: fix/local-workspace
   universe/external/trt_batched_nms:
     type: git
     url: https://github.com/autowarefoundation/trt_batched_nms.git
@@ -112,6 +112,43 @@ repositories:
     type: git
     url: https://github.com/autowarefoundation/managed_transform_buffer.git
     version: 0.2.0
+  # Local workspace extras (present under src/ but previously unpinned)
+  universe/external/autoware_vision_pilot:
+    type: git
+    url: https://github.com/autowarefoundation/autoware_vision_pilot.git
+    version: fix/local-workspace
+  universe/external/boreas_cpp:
+    type: git
+    url: https://github.com/ReginaldOlsson/boreas_cpp.git
+    version: dev
+  universe/external/lie_lane_detection:
+    type: git
+    url: https://github.com/ReginaldOlsson/lie_lane_detection.git
+    version: feature/boreas-odom-mosaic-hybrid-road-seg
+  universe/external/localization/rko_lio:
+    type: git
+    url: https://github.com/ReginaldOlsson/rko_lio.git
+    version: fix/local-workspace
+  universe/external/PlotJuggler:
+    type: git
+    url: https://github.com/PlotJuggler/PlotJuggler.git
+    version: main
+  universe/external/point_painter:
+    type: git
+    url: https://github.com/ReginaldOlsson/point_painter.git
+    version: main
+  universe/external/rviz_birdeye_display:
+    type: git
+    url: https://github.com/teamspatzenhirn/rviz_birdeye_display.git
+    version: main
+  universe/external/rviz_satellite:
+    type: git
+    url: https://github.com/ReginaldOlsson/rviz_satellite.git
+    version: dev
+  universe/external/spatz_interfaces:
+    type: git
+    url: https://github.com/teamspatzenhirn/spatz_interfaces.git
+    version: master
 
   # launcher
   launcher/autoware_launch:
@@ -136,7 +173,7 @@ repositories:
   sensor_component/transport_drivers:
     type: git
     url: https://github.com/autowarefoundation/transport_drivers
-    version: 39ebd8afe1bb9760a6cd6272e428468480f6de90
+    version: fix/local-workspace
   # Continental compatible version of ROS 2 socket CAN
   sensor_component/ros2_socketcan:
     type: git
