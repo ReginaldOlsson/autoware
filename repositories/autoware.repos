@@ -129,6 +129,14 @@ repositories:
     type: git
     url: https://github.com/ReginaldOlsson/rko_lio.git
     version: fix/local-workspace
+  universe/external/localization/FAR-LIO:
+    type: git
+    url: https://github.com/TUMFTM/FAR-LIO.git
+    version: cursor/optional-state-estimation-tf
+  universe/external/monocular_vo:
+    type: git
+    url: https://github.com/ReginaldOlsson/monocular_vo.git
+    version: dev
   universe/external/PlotJuggler:
     type: git
     url: https://github.com/PlotJuggler/PlotJuggler.git
@@ -154,7 +162,7 @@ repositories:
   launcher/autoware_launch:
     type: git
     url: https://github.com/ReginaldOlsson/autoware_launch.git
-    version: feature/moveit-ackermann-freespace
+    version: cursor/far-lio-runtime-localization
 
   # sensor_component
   sensor_component/external/sensor_component_description:
